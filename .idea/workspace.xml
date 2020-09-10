@@ -144,12 +144,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../blog" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\proyecto_trueque_backend" />
       <recent name="C:\xampp\Api-Trueque" />
     </key>
   </component>
@@ -173,6 +174,7 @@
       <workItem from="1598558648971" duration="1003000" />
       <workItem from="1599103312606" duration="3894000" />
       <workItem from="1599139961421" duration="661000" />
+      <workItem from="1599156430548" duration="6411000" />
     </task>
     <servers />
   </component>
@@ -194,13 +196,15 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
   <component name="WindowStateProjectService">
+    <state x="580" y="185" key="FileChooserDialogImpl" timestamp="1599156782216">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1599156782216" />
+    <state x="567" y="153" key="NewPhpClassDialog" timestamp="1599165313663">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="567" y="153" key="NewPhpClassDialog/0.0.1600.860@0.0.1600.860" timestamp="1599165313663" />
     <state x="181" y="9" key="SettingsEditor" timestamp="1598559886136">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
