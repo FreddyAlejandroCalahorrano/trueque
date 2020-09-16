@@ -21,6 +21,7 @@ class ProductsTableSeeder extends Seeder
                     'title' => $faker->sentence,
                     'image' => $faker->imageUrl(400,300, null, false),
                     'value' => $faker->randomDigit,
+                    'description' => $faker->paragraph,
                 ]);
             }
         }

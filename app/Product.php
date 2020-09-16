@@ -3,8 +3,9 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use phpDocumentor\Reflection\DocBlock\Description;
 
 class Product extends Model
 {
-    protected $fillable = [ 'tittle', 'image', 'value'];
+    protected $fillable = [ 'title', 'image', 'value', 'description'];
 }
