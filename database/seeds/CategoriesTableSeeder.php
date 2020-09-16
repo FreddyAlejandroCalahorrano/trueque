@@ -1,6 +1,6 @@
 <?php
 
-use App\Categorie;
+use App\Category;
 use Illuminate\Database\Seeder;
 
 class CategoriesTableSeeder extends Seeder
@@ -13,10 +13,10 @@ class CategoriesTableSeeder extends Seeder
     public function run()
     {
         // Vaciamos la tabla categories
-        Categorie::truncate();
+        Category::truncate();
         $faker = \Faker\Factory::create();
         for ($i = 0; $i < 3; $i++) {
-            Categorie::create([
+            Category::create([
                 'name' => $faker->word
             ]);
         }
