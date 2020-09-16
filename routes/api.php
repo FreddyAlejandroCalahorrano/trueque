@@ -32,3 +32,11 @@ Route::get('categories/{category}', 'CategoryController@show');
 Route::post('categories', 'CategoryController@store');
 Route::put('categories/{category}', 'CategoryController@update');
 Route::delete('categories/{category}', 'CategoryController@delete');
+
+//Questions
+
+Route::get('questions', 'QuestionController@index');
+Route::get('questions/{question}', 'QuestionController@show');
+Route::post('questions', 'QuestionController@store');
+Route::put('questions/{question}', 'QuestionController@update');
+Route::delete('questions/{question}', 'QuestionController@delete');
