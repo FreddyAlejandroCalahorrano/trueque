@@ -15,15 +15,24 @@ class ProductsTableSeeder extends Seeder
         // Vaciar la tabla articles.
         Product::truncate();
         $faker = \Faker\Factory::create();
+        $users = App\User::all();
+        $categories = App\Category::all();
 
-            for ($j = 0; $j < 5; $j++) {
-                Product::create([
-                    'title' => $faker->sentence,
-                    'image' => $faker->imageUrl(400,300, null, false),
-                    'value' => $faker->randomDigit,
-                    'description' => $faker->paragraph,
-                ]);
+        foreach($users as $user){
+            for($i = 0; $i < 5; $i++) {
+                foreach ($categories as $category){
+                $user->products()->save(
+                    New Product([
+                        'title' => $faker->sentence,
+                        'image' => $faker->imageUrl(400,300, null, false),
+                        'value' => $faker->randomDigit,
+                        'description' => $faker->paragraph,
+                        'category_id' => $category->id
+                    ]));
+                }
             }
         }
     }
+
+}
 
