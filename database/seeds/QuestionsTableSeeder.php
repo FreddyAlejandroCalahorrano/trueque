@@ -15,10 +15,19 @@ class QuestionsTableSeeder extends Seeder
         // Vaciamos la tabla Questions
         Question::truncate();
         $faker = \Faker\Factory::create();
-        for ($i = 0; $i < 3; $i++) {
-            Question::create([
-                'question' => $faker->word
-            ]);
+        $users = App\User::all();
+
+        foreach($users as $user){
+            for($i = 0; $i < 3; $i++) {
+                $products = $user->products;
+                foreach ($products as $product) {
+                    $user->questions()->save(
+                        New Question([
+                            'question' => $faker->word,
+                            'product_id' => $product->id
+                        ]));
+                }
+            }
         }
     }
 }
